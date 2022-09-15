@@ -33,11 +33,6 @@ pipeline {
             }
         }
         stage('Continue') {
-           input{
-               message "you are ready"
-               ok "yes"
-               
-           }
             steps {
                 echo 'Deployment'
                 sh 'echo "${username}"'
